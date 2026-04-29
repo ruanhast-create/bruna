@@ -1,12 +1,11 @@
 body{
 
 background:#032C44  ;
-font: 16px, arial, helvetica, sans-serif;
-}
+font: 16px Arial, Helvetica, sans-serif;}
 
 #principal{
 border: px solid blue;
-width: 100%px;
+max-width: 100%;
 align-content: center;
 }
 
@@ -44,29 +43,27 @@ color:whitesmoke;
 
 border: ; 
 padding: -3px;
-margin-top: px;
-margin-right: px;
-margin-left: px ;
-margin-bottom: px;
+max-width: 100%;
+
 }
 
 
 .conteudo2{
 
-border:  ;
-background: #032C44;
-margin-bottom: 50px ;
-margin-top: 10px;
-padding: 10px;
-display: flex;
 
+background: #032C44;
+
+display: flex;
+ gap: 20px;
+    align-items: center;
 }
 
 
 .conteudo3{
 
 display: flex;
-
+ gap: 20px;
+    align-items: center;
 }
 
 
@@ -79,14 +76,12 @@ padding: 10px;
 
 
 video{
-padding: 50px;
-margin-right: 50px;
-margin-left: 310px;
+max-width: 100%;
 }
 
 .conteudo5{
 display: flex;
-
+max-width: 100%;
 
 }
 
@@ -95,21 +90,78 @@ display: flex;
 
 
 
-padding: 100px;
-margin-right: 500px ;
-margin-left: 100px;
+
 }
 
 .conteudo7{
 
-display:center ;
-
+text-align: center;
 }
 
 .conteudo8{
 
 
-display: flex;
+display: ;
+ gap: 20px;
+    align-items: center;
+
+}
 
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* empilha tudo no celular */
+    .conteudo2,
+    .conteudo3,
+    .conteudo8 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    video {
+        margin:  auto;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .conteudo6 {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #5B27F5;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao:hover {
+    background: #4a1fd1;
 }
